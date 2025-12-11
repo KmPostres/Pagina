@@ -1,0 +1,67 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffe8f3; /* rosa pastel */
+  width: 100%;
+}
+
+/* -------------------- MOBILE FIRST -------------------- */
+
+/* Tablets */
+@media (min-width: 768px) {
+  .main {
+    padding: 40px;
+  }
+
+  .bienvenida h2 {
+    font-size: 2rem;
+  }
+
+  .bienvenida p {
+    font-size: 1.2rem;
+  }
+}
+
+/* PCs grandes */
+@media (min-width: 1024px) {
+  .main {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .bienvenida h2 {
+    font-size: 2.5rem;
+  }
+
+  .bienvenida p {
+    font-size: 1.3rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
+  padding: 100px 20px;
+  margin-top: 60px; /* espacio para que no se oculte bajo el header */
+}

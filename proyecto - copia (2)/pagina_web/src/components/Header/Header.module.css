@@ -1,0 +1,58 @@
+.header {
+  display: flex;
+  justify-content: space-between; /* distribuye elementos */
+  align-items: center;            /* centra verticalmente */
+  padding: 20px 0;
+  background-color: #fffcff;
+  border-bottom: 3px solid #e15de1;
+  width: 100%;
+}
+
+/* Logo redondo */
+.logo {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  order: 3; /* lo mandamos a la derecha */
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 120px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    width: 150px;
+  }
+}
+
+/* Título a la izquierda */
+.title {
+  font-size: 1.5rem;
+  color: #8518a0;
+  font-weight: bolder;
+  margin: 0;
+  order: 1; /* lo dejamos a la izquierda */
+}
+
+/* Menú centrado */
+nav {
+  display: flex;
+  gap: 30px;          /* separa los enlaces */
+  order: 2;           /* lo ponemos en medio */
+  margin: 0 auto;     /* lo centra entre título y logo */
+}
+
+nav a {
+  color: #191719;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
