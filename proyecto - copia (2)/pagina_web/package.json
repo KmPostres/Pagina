@@ -1,7 +1,7 @@
 {
   "name": "pagina_web",
   "private": true,
-  "homepage": "http:/KmPostres.github.io/PostresKm",
+  
   "version": "0.0.0",
   "type": "module",
   "scripts": {
